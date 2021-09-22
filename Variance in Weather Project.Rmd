@@ -1,0 +1,81 @@
+---
+title: "Variance in Weather Project"
+output: html_notebook
+---
+```{r message=FALSE, warning=FALSE, error=TRUE}
+library(readr)
+library(dplyr) 
+```
+
+```{r error=TRUE}
+load("project.Rda")
+```
+
+```{r error=TRUE}
+ 
+#defining the variance of the population mean 
+variance <- function(x) mean((x-mean(x))^2)
+
+# Inspect Data
+head(london_data)
+names(london_data)
+nrow(london_data)
+
+temp <- london_data$TemperatureC
+
+# average temp
+average_temp <- mean(temp)
+average_temp
+# Variance and SD for the year
+temperature_var <- variance (temp)
+print(temperature_var)
+
+temperature_standard_deviation <- sd(temp)
+#Inspect once again
+head(london_data) 
+
+june <- london_data %>%
+filter(month == "06") 
+
+july = london_data %>%
+filter(month == "07")  
+# Get monthly temperature average
+
+mean(june$TemperatureC)
+mean(july$TemperatureC)
+  
+# Get monthly temperature sandard deviation
+
+sd(june$TemperatureC) 
+sd(july$TemperatureC)
+
+# Analyze by month
+
+TemperatureC_stats <- london_data %>%
+group_by(month) %>%
+summarize(mean = mean(TemperatureC),
+standard_deviation = sd(TemperatureC))
+ 
+TemperatureC_stats
+ 
+DewpointC_stats <- london_data %>%
+group_by(month) %>%
+summarize(mean = mean(DewpointC),
+standard_deviation = sd(DewpointC))
+ 
+DewpointC_stats
+
+Humidity_stats <- london_data %>%
+group_by(month) %>%
+summarize(mean = mean(Humidity),
+standard_deviation = sd(Humidity))
+ 
+Humidity_stats
+
+hour_stats <- london_data %>%
+group_by(month) %>%
+summarize(mean = mean(hour),
+standard_deviation = sd(hour))
+ 
+hour_stats
+```
