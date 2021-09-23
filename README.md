@@ -1,14 +1,12 @@
-# A/B Testing for ShoeFly.com Project
+# Variance in Weather Project
 ### About: 
 
-For this project, I implemented data analysis using R. I used the libraries readr, and dplyr which helped me to build the project. I analyze the data of ShoeFly.com to gain a better understanding and insight of the two different version of an ad, that were placed in emails, as well as in banners ads on Facebook, Twitter, and Google. The company wanted to know how the two ads performed on each of the different platforms on each day of the week. The project helps the company analyze the data using aggregate measures.  
+For this project, I implemented data analysis using R. I used the libraries readr, and dplyr which helped me to build the project. I analyze thedataset from 2015 that contains over 39,000 data points about weather conditions in London to gain a better understanding and insight  
  
 ### Note:
 
-This data comes from ShoeFly.com 
-
-After analyzing the data, ad A outperformed ad B on every day of the week except Tuesday and Sunday. It seems that ad A is the best choice for ShoeFly.com
-
+I could not find the dataset that I used for this code, therefore to prove I understand how to analyze similar datasets I did another project called Variance in Weather in London, England Project.
+ 
 # Variance in Weather in London, England Project
 ### About: 
 
