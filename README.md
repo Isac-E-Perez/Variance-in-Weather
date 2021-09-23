@@ -1,11 +1,11 @@
 # Variance in Weather Project
 ### About: 
 
-For this project, I implemented data analysis using R. I used the libraries readr, and dplyr which helped me to build the project. I analyze thedataset from 2015 that contains over 39,000 data points about weather conditions in London to gain a better understanding and insight  
+For this project, I implemented data analysis using R. I used the libraries readr, and dplyr which helped me to build the project. I analyze the dataset from 2015 that contains over 39,000 data points about weather conditions in London to gain a better understanding and insight about weather condition during that time.  
  
 ### Note:
 
-I could not find the dataset that I used for this code, therefore to prove I understand how to analyze similar datasets I did another project called Variance in Weather in London, England Project.
+I could not find the dataset that I used for this code, therefore to prove I understand how to analyze similar datasets I did another project called Variance in Weather in London, England Project that I will expand on more.
  
 # Variance in Weather in London, England Project
 ### About: 
