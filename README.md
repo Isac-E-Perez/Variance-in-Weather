@@ -21,19 +21,19 @@ Here are the results I gained through data analysis of the England_data.csv data
 
 -- Here is the process:
 
-I first read the England_data csv and set it equal to England_df.
+I first read the *England_data* csv and set it equal to England_df.
 
-I then inspected the data and gleamed that there was 365 rows and 11 columns of data.
+I then inspected the data and gleamed that there was **365** rows and **11** columns of data.
 
-The average precipitation was then calculated for all of 2015 equalling 1.512707 mm.
+The *average precipitation* was then calculated for all of 2015 equalling **1.512707 mm**.
 
-The precipitation variance for the year was 15.90826 mm and the precipitation standard deviation was 3.988516 mm. 
+The *precipitation variance* for the year was **15.90826 mm** and the *precipitation standard deviation* was **3.988516 mm**. 
 
-I inspect and defined june and july.
+I inspect and defined *june* and *july*.
 
-Afterwards I found the mean of the precipitation in june and july, which were 0.4233333 mm and 2.325806 mm respectfully.
+Afterwards I found the *monthly mean of the precipitation* in june and july, which were **0.4233333 mm** and **2.325806 mm** respectfully.
 
-The monthly standard deviation of the precipitation in june and july, which were 1.14521 mm and 6.959692 mm.
+The *monthly standard deviation of the precipitation* in june and july, which were **1.14521 mm** and **6.959692 mm**.
   
 ### June's Average Temperature
 
