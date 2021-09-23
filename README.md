@@ -14,7 +14,7 @@ For this project, I implemented data analysis using R. I used the libraries read
  
 ### Note:
 
-This data comes from Smeteostat.net 
+This data comes from meteostat.net 
  
 ### Results:
 Here are the results I gained through data analysis of the England_data.csv data.
