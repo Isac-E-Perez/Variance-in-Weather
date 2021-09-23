@@ -102,6 +102,5 @@ England_df_prcp <- England_df %>% ggplot(aes(x = date, y = prcp)) + geom_line() 
        subtitle="Data by meteostat.net (2015)", x="Months", 
        y="Precipitation (mm)")
 England_df_prcp
-
 ggsave("England_df_prcp.png")
 ```
