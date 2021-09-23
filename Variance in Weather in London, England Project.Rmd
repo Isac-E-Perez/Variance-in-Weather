@@ -1,5 +1,5 @@
 ---
-title: "Variance in Weather in London, England Project"
+title: "Variance in Weather Project"
 output: html_notebook
 ---
 ```{r message=FALSE, warning=FALSE, error=TRUE}
@@ -94,13 +94,14 @@ july_prcp <- july %>% ggplot(aes(x = date, y = prcp)) + geom_point(aes(colour = 
   geom_smooth() + labs(title="July's Precipitation in London, England", 
        subtitle="Data by meteostat.net (2015)", x="Months", 
        y="Precipitation (mm)")
-july_prcp
 ggsave("july_prcp.png")
+july_prcp
 
-England_df_prcp <- England_df %>% ggplot(aes(x = date, y = prcp)) + geom_line() + 
+England_df_prcp <- England_df %>% ggplot(aes(x = date, y = prcp)) + geom_line() +
   labs(title="Precipitation in London, England", 
        subtitle="Data by meteostat.net (2015)", x="Months", 
        y="Precipitation (mm)")
 England_df_prcp
+
 ggsave("England_df_prcp.png")
 ```
