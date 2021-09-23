@@ -1,0 +1,106 @@
+---
+title: "Variance in Weather in London, England Project"
+output: html_notebook
+---
+```{r message=FALSE, warning=FALSE, error=TRUE}
+library(readr)
+library(dplyr)
+library(tidyverse) 
+```
+
+```{r error=TRUE}
+library(readr)
+England_df <- read_csv("England_data.csv")
+ 
+```
+
+```{r error=TRUE}
+
+# Inspect Data
+England_df %>% dim()
+
+precipitation <- England_df$prcp
+
+# average prcp
+average_precipitation <- mean(precipitation,na.rm=TRUE)
+average_precipitation
+
+# Variance and SD for the year
+precipitation_var <- var(precipitation,na.rm=TRUE)
+print(precipitation_var) 
+
+precipitation_standard_deviation <- sd(precipitation,na.rm=TRUE)
+print(precipitation_standard_deviation)
+
+#Inspect once again for june and july 
+june <- England_df %>% 
+  select(date, tavg, tmin, tmax, prcp, snow, wdir, wspd, wpgt, pres, tsun) %>%
+  filter(between(date, as.Date("2015-06-01"), as.Date("2015-06-30")))
+june 
+
+july <- England_df %>% 
+  select(date, tavg, tmin, tmax, prcp, snow, wdir, wspd, wpgt, pres, tsun) %>%
+  filter(between(date, as.Date("2015-07-01"), as.Date("2015-07-31")))
+july
+
+# Get monthly precipitation average
+mean(june$prcp, na.rm=TRUE)
+mean(july$prcp, na.rm=TRUE)
+
+# Get monthly precipitation standard deviation
+sd(june$prcp, na.rm=TRUE) 
+sd(july$prcp, na.rm=TRUE)
+
+# Analyze by month
+
+precipitation_stats <- England_df %>%
+group_by(date) %>%
+summarize(mean = mean(prcp,na.rm=TRUE),
+standard_deviation = sd(prcp,na.rm=TRUE))
+
+precipitation_stats
+```
+
+```{r error=TRUE}
+june_temp <- june %>% ggplot(aes(x = date, y = tavg)) + geom_point(aes(colour = tavg))+
+  geom_smooth() + labs(title="June's Average Temperature in London, England", 
+       subtitle="Data by meteostat.net (2015)", x="Months", 
+       y="Temperature (°C)")
+june_temp
+ggsave("june_temp.png")
+
+july_temp <- july %>% ggplot(aes(x = date, y = tavg)) + geom_point(aes(colour = tavg))+
+  geom_smooth() + labs(title="July's Average Temperature in London, England", 
+       subtitle="Data by meteostat.net (2015)", x="Months", 
+       y="Temperature (°C)")
+july_temp
+ggsave("july_temp.png")
+
+England_df_temp <- England_df %>% ggplot(aes(x = date, y = tavg)) + geom_point(aes(colour = tavg))+
+  geom_smooth() + labs(title="Average Temperature in London, England", 
+       subtitle="Data by meteostat.net (2015)", x="Months", 
+       y="Temperature (°C)")
+England_df_temp
+ggsave("England_df_temp.png")
+
+june_prcp <- june %>% ggplot(aes(x = date, y = prcp)) + geom_point(aes(colour = prcp)) + 
+  geom_smooth() + labs(title="June's Precipitation in London, England", 
+       subtitle="Data by meteostat.net (2015)", x="Months", 
+       y="Precipitation (mm)")
+june_prcp
+ggsave("june_prcp.png")
+
+july_prcp <- july %>% ggplot(aes(x = date, y = prcp)) + geom_point(aes(colour = prcp)) +
+  geom_smooth() + labs(title="July's Precipitation in London, England", 
+       subtitle="Data by meteostat.net (2015)", x="Months", 
+       y="Precipitation (mm)")
+july_prcp
+ggsave("july_prcp.png")
+
+England_df_prcp <- England_df %>% ggplot(aes(x = date, y = prcp)) + geom_line() + 
+  labs(title="Precipitation in London, England", 
+       subtitle="Data by meteostat.net (2015)", x="Months", 
+       y="Precipitation (mm)")
+England_df_prcp
+ggsave("England_df_prcp.png")
+```
