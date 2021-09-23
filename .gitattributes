@@ -1,0 +1,2 @@
+[diff "markdown"]
+	xfuncname = "^(\\\\(sub)*section\\{.*)$"
