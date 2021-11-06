@@ -47,7 +47,13 @@ Afterwards I found the *monthly mean of the precipitation* in june and july, whi
 The *monthly standard deviation of the precipitation* in june and july, which were **1.14521 mm** and **6.959692 mm**.
 
 <img width="347" alt="Screen Shot 2021-11-06 at 4 37 16 PM" src="https://user-images.githubusercontent.com/89553126/140624562-570df1b6-740c-41b8-aa1f-74dd6af968e7.png">
-  
+ 
+Afterwards, I analyzed the precipitation of all the months.
+ 
+<img width="314" alt="Screen Shot 2021-11-06 at 4 40 29 PM" src="https://user-images.githubusercontent.com/89553126/140624644-6b55b7a0-fb73-40e8-bc84-530b48ca0ffc.png">
+
+Finally, I plotted the data to gain better understanding of trends and averages. I decided to analyze June and July since those two months are heavy vacation times for tourist.
+
 ### June's Average Temperature
 
 ![june_temp](https://user-images.githubusercontent.com/89553126/134444162-21757da5-5716-408a-9f5f-90db3e99cc7c.png)
@@ -71,3 +77,7 @@ The *monthly standard deviation of the precipitation* in june and july, which we
 ### Precipitation
 
 ![England_df_prcp](https://user-images.githubusercontent.com/89553126/134444225-c45b7e87-422c-4d7e-8ef2-413e8e33dd96.png)
+
+I could gleam from the plots that at late June and early July it is the hottest out for London and best to avoid when on vacation as well as there is a higher chance of rain during the month of June. Based on the data, it is best to go on vacation to London during the fall when the chance of rain is low and its not too hot.
+
+In conclusion,  Iwas able to analyze and extract a lot of information about the weather of London during 2015 with the data given.
