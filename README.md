@@ -19,8 +19,6 @@ This data comes from meteostat.net
 ### Results:
 Here are the results I gained through data analysis of the England_data.csv data.
 
--- Here is the process:
-
 I first read the *England_data* csv and set it equal to England_df.
  
 <img width="246" alt="Screen Shot 2021-11-06 at 4 31 27 PM" src="https://user-images.githubusercontent.com/89553126/140624382-68d38706-e6fc-4cd7-aa23-8e76bd5e89ea.png">
