@@ -5,7 +5,7 @@ For this project, I implemented data analysis using R. I used the libraries read
  
 ### Note:
 
-I could not find the dataset that I used for this code, therefore to prove I understand how to analyze similar datasets I did another project called Variance in Weather in London, England Project that I will expand on more.
+I could not find the dataset that I used for this code, therefore to prove I understand how to analyze similar datasets with another project called Variance in Weather in London, England Project that I will expand on more.
  
 # Variance in Weather in London, England Project
 ### About: 
