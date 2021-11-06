@@ -80,4 +80,4 @@ Finally, I plotted the data to gain better understanding of trends and averages.
 
 I could gleam from the plots that at late June and early July it is the hottest out for London and best to avoid when on vacation as well as there is a higher chance of rain during the month of June. Based on the data, it is best to go on vacation to London during the fall when the chance of rain is low and its not too hot.
 
-In conclusion,  Iwas able to analyze and extract a lot of information about the weather of London during 2015 with the data given.
+In conclusion,  I was able to analyze and extract a lot of information about the weather of London during 2015 with the data given.
