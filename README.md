@@ -42,7 +42,11 @@ I inspect and defined *june* and *july*.
  
 Afterwards I found the *monthly mean of the precipitation* in june and july, which were **0.4233333 mm** and **2.325806 mm** respectfully.
 
+<img width="272" alt="Screen Shot 2021-11-06 at 4 36 50 PM" src="https://user-images.githubusercontent.com/89553126/140624543-f23cb540-adaa-44a1-a7b3-b4755eab29e1.png">
+ 
 The *monthly standard deviation of the precipitation* in june and july, which were **1.14521 mm** and **6.959692 mm**.
+
+<img width="347" alt="Screen Shot 2021-11-06 at 4 37 16 PM" src="https://user-images.githubusercontent.com/89553126/140624562-570df1b6-740c-41b8-aa1f-74dd6af968e7.png">
   
 ### June's Average Temperature
 
